@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATK Arena - Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+       <a class="logo" href="index.html">ATK Arena</a>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Contact</h1>
+      <section aria-labelledby="hq">
+        <h2 id="hq">Cape Town - pretoria</h2>
+       <address>Loftus Versveld Stadium, 
+                467 Kirkness St, 
+                Arcadia,
+                Pretoria, 0002<br>
+                Phone: 081 726 8421 <br>
+                Email: <a href="loftus@atkarena.com">loftus@atkarena.com</a>
+       </address>
+        <div class="map-placeholder" role="img" aria-label="Map placeholder for Cape Town location"></div>
+      </section>
+  </main>
+
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <form action="#" method="post">
+    <fieldset>
+        <legend>Your details</legend>
+        <label for="name">Full Name</label>
+         <input id="name" name="name" type="text" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="phone">Phone</label>
+        <input id="phone" name="phone" type="tel">
+    </fieldset>
+
+    <fieldset>
+      <legend>Enquiry Type</legend>
+      <label for="type">Select an option</label>
+       <select id="type" name="type" required>
+
+       <option value="">--please choose--</option>
+       <option value="Booking">PC/ConsoleBooking</option>
+       <option value="tournament">Tournament Registration</option>
+       <option value="sponsorship">Sponsorship/Partnership</option>
+       <option value="other">Other</option>
+       </select>
+
+                        <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6" placeholder="Tell us more..." required></textarea>
+    </fieldset>
+
+    <button type="submit">Send Enquiry</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="year"></span>ATK Arena. All rights reserved</p>
+    </div>
+  </footer>
+
+</body>
+</html>
